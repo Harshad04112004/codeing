@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <!-- The name of website -->
+        <h1>Harshad Website</h1>
+       <!-- manue of website -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- search on website -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass" style="font-size: 15px;"></i></button>
+          </div>
+          <ul id="search-results"></ul>
+          <!-- button in login abd singe -->
+        <nav>
+            <button id="Loginbutton">Login</button>
+
+        </nav>
+      </header>
+      <main>
+        <!-- the main parate of website -->
+        <div class="container" id="main-container" >
+          <div class="left">
+              <label><i class="fa-brands fa-html5"></i>HTML</label>
+              <textarea id="html-code" onkeyup="run()"></textarea>
+      
+              <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+              <textarea id="css-code" onkeyup="run()"></textarea>
+      
+              <label><i class="fa-brands fa-js"></i>JavaScript</label>
+              <textarea id="js-code" onkeyup="run()"></textarea>
+          </div>
+          <div class="right">
+              <label><i class="fa-solid fa-play"></i>Output</label>
+              <iframe id="output"></iframe>
+          </div>
+      </div>
+        <!-- Login form -->
+        <div class="login-container" id="login-container" style="display: none;">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username"><i class="fa-solid fa-user"></i>  Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+                <label for="password"><i class="fa-solid fa-lock"></i> Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+                <button type="submit" onclick="Login()">Login</button>
+            </form><br>
+      </main>
+      <main id="main2">
+         <h5>The life is some and main full for world</h5>
+      </main>
+      <footer id="footer">
+        <p>&copy; <span id="copyright-year"></span> Harshad Website. All Rights Reserved.</p>
+        <p>Email :- harshaddarji41104@gmail.com</p>
+      </footer>
+     <script src="script.js"></script>
+</body>
+</html>
